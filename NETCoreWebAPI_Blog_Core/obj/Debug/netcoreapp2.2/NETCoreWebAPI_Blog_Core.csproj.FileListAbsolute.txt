@@ -1,0 +1,8 @@
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.deps.json
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.AssemblyInfoInputs.cache
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.AssemblyInfo.cs
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.pdb
