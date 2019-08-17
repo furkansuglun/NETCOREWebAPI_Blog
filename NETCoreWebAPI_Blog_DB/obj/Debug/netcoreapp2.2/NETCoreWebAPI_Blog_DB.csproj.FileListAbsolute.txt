@@ -1,0 +1,14 @@
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.deps.json
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.AssemblyInfoInputs.cache
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.AssemblyInfo.cs
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.xml
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.csproj.CopyComplete
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.csprojAssemblyReference.cache
