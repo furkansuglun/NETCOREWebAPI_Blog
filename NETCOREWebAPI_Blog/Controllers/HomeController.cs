@@ -14,7 +14,24 @@ namespace NETCOREWebAPI_Blog.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        private ICategoryRepository _repo;
+
+        public HomeController(ICategoryRepository repo)
+        {
+            _repo = repo;
+        }
        
+        [HttpGet("All")]
+        public IQueryable GetAll()
+        {
+            return _repo.GetAll();
+        }
+
+        [HttpGet("GetById/{id}")]
+        public  Task<Category> GetById(int id)
+        {
+            return _repo.GetById(id);
+        }
 
        
     }

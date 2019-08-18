@@ -45,11 +45,19 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "LinqKit.EntityFramework": {
+              "target": "Package",
+              "version": "[1.1.16, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "System.Data.Entity.Repository": {
+              "target": "Package",
+              "version": "[2.0.0.1, )"
             }
           },
           "imports": [

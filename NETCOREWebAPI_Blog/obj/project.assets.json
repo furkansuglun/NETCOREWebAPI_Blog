@@ -13,6 +13,15 @@
           "lib/net45/EntityFramework.dll": {}
         }
       },
+      "LinqKit.EntityFramework/1.1.16": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LinqKit.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LinqKit.EntityFramework.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2728,6 +2737,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.OpenApi/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.2.3": {
         "type": "package",
         "dependencies": {
@@ -3132,25 +3150,11 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "4.0.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "4.0.1",
-          "Swashbuckle.AspNetCore.SwaggerUI": "4.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Swashbuckle.AspNetCore.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Swashbuckle.AspNetCore.dll": {}
-        }
-      },
-      "Swashbuckle.AspNetCore.Swagger/4.0.1": {
+      "Swashbuckle.AspNetCore.Swagger/5.0.0-rc2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.0.0",
-          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.0.0"
+          "Microsoft.OpenApi": "1.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll": {}
@@ -3159,34 +3163,21 @@
           "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/4.0.1": {
+      "Swashbuckle.AspNetCore.SwaggerGen/5.0.0-rc2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.0.0",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.0.0",
-          "Swashbuckle.AspNetCore.Swagger": "4.0.1"
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.0.0",
+          "Microsoft.OpenApi": "1.1.1",
+          "Swashbuckle.AspNetCore.Swagger": "5.0.0-rc2"
         },
         "compile": {
           "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        }
-      },
-      "Swashbuckle.AspNetCore.SwaggerUI/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Routing": "2.0.0",
-          "Microsoft.AspNetCore.StaticFiles": "2.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "2.0.0",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -3420,6 +3411,18 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Console.dll": {}
+        }
+      },
+      "System.Data.Entity.Repository/2.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
         }
       },
       "System.Data.SqlClient/4.6.1": {
@@ -4792,6 +4795,9 @@
       "NETCoreWebAPI_Blog_BAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.0.0-rc2"
+        },
         "compile": {
           "bin/placeholder/NETCoreWebAPI_Blog_BAL.dll": {}
         },
@@ -4803,7 +4809,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "NETCoreWebAPI_Blog_DB": "1.0.0"
+          "LinqKit.EntityFramework": "1.1.16",
+          "NETCoreWebAPI_Blog_DB": "1.0.0",
+          "System.Data.Entity.Repository": "2.0.0.1"
         },
         "compile": {
           "bin/placeholder/NETCoreWebAPI_Blog_Core.dll": {}
@@ -4870,6 +4878,19 @@
         "tools/init.ps1",
         "tools/install.ps1",
         "tools/migrate.exe"
+      ]
+    },
+    "LinqKit.EntityFramework/1.1.16": {
+      "sha512": "b1LTlOo6iAd6STvQvtucAT34GstmDobG0ECPiR6rcJ9qmA8HySoH+na7Jd5QCQVWd6AB9h1phs426nX37WR03A==",
+      "type": "package",
+      "path": "linqkit.entityframework/1.1.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/LinqKit.EntityFramework.dll",
+        "lib/net45/LinqKit.EntityFramework.xml",
+        "linqkit.entityframework.1.1.16.nupkg.sha512",
+        "linqkit.entityframework.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -7631,6 +7652,23 @@
         "version.txt"
       ]
     },
+    "Microsoft.OpenApi/1.1.1": {
+      "sha512": "96jr5MPyQ9WzxiBlTH2czVLwpOn7a7Y6j1vRHIZ4sIOFSAclPW2G+iQwnbw7rFBabTALiFJJ7q5Z5r8s+RmGvw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.1.1.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.2.3": {
       "sha512": "wc71c9HWTeXy9/w9O4Yr2LKmdJjVyIoJ/XQX8/6uma4EAVU25RLtUWlvhA0gpgFw9Kf1TkCv70x+CbKnRw/d8Q==",
       "type": "package",
@@ -8538,55 +8576,32 @@
         "version.txt"
       ]
     },
-    "Swashbuckle.AspNetCore/4.0.1": {
-      "sha512": "Zq6lkFieuFPNDwXwQ+e8i5zy2VMrexcRFU8mQORxqIc8r7Y+qKX63vg57yL1HeGCINHQGGzxGfw2rP63IeEqhg==",
+    "Swashbuckle.AspNetCore.Swagger/5.0.0-rc2": {
+      "sha512": "iFR7O9iVv1Q6ARG4CRIfHQbC6cCTH7Kd+ZNyu58doS4OD0rOHb9QGIhy9Z7Y4knufP1gSwZEXBPVydQ+DJzukQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.dll",
-        "swashbuckle.aspnetcore.4.0.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.Swagger/4.0.1": {
-      "sha512": "rqzS3vHrjz+tR5j0nZOKZyaMTDfLGbVYkwMq205aYuGbsiGwbOlNU0Q8lq4Q0ptQPMKVkUf8XouCIdJ3qpK17w==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/4.0.1",
+      "path": "swashbuckle.aspnetcore.swagger/5.0.0-rc2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.5.0.0-rc2.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/4.0.1": {
-      "sha512": "ztAj0T1U+2AqQNA8b+nr8yVkDW9XzNaAfez6d1jO13sdn2A/JW5Syn9TThsakrHxYNLt6y6aQCXbyBfQXpcQwA==",
+    "Swashbuckle.AspNetCore.SwaggerGen/5.0.0-rc2": {
+      "sha512": "6csI4ErfHVjoURIrrcfEf42X8/VQKjc3CP4NcjFhSxSku4i5NUiBJjDACRfkiPqiKunDAG2hwBv0dJPD4s3sTA==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/4.0.1",
+      "path": "swashbuckle.aspnetcore.swaggergen/5.0.0-rc2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.5.0.0-rc2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerUI/4.0.1": {
-      "sha512": "d2U7NyV0e4UhyCzAVK9QHm0iz2QoVPUa9XzJ/Gr0rn/jBZWFpVLvigKv0vxFzO2E793sY605+4h885gvCdKSxQ==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "swashbuckle.aspnetcore.swaggerui.4.0.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -9112,6 +9127,18 @@
         "ref/xamarinwatchos10/_._",
         "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
+      ]
+    },
+    "System.Data.Entity.Repository/2.0.0.1": {
+      "sha512": "MnYUvHPcOAUGIyOzKR4A6Kd918VkCjKpfFCQoNdjY6LO4y1QwrwWZtdmOs2B3wozTYfJgPWKpIeW3ZHn+ylgrA==",
+      "type": "package",
+      "path": "system.data.entity.repository/2.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Data.Entity.Repository.dll",
+        "system.data.entity.repository.2.0.0.1.nupkg.sha512",
+        "system.data.entity.repository.nuspec"
       ]
     },
     "System.Data.SqlClient/4.6.1": {
@@ -13159,8 +13186,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
       "NETCoreWebAPI_Blog_BAL >= 1.0.0",
       "NETCoreWebAPI_Blog_DAL >= 1.0.0",
-      "NETCoreWebAPI_Blog_DB >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 4.0.1"
+      "NETCoreWebAPI_Blog_DB >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13251,10 +13277,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.3, )"
-          },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[4.0.1, )"
           }
         },
         "imports": [
@@ -13272,6 +13294,26 @@
       "warningLevel": 1,
       "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LinqKit.EntityFramework 1.1.16' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "LinqKit.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.Entity.Repository 2.0.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Data.Entity.Repository",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"
       ]

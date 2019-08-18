@@ -1,10 +1,10 @@
-﻿using NETCoreWebAPI_Blog_Core.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using NETCoreWebAPI_Blog_Core.Abstract;
 using NETCoreWebAPI_Blog_DB.Abstract;
 using NETCoreWebAPI_Blog_DB.Context;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
+using System.Collections.Generic; 
+using System.Linq;  
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,10 +37,10 @@ namespace NETCoreWebAPI_Blog_Core.Concreate
         {
             return _context.Set<TEntity>().AsNoTracking();
         }
-
+          
         public async Task<TEntity> GetById(int Id)
-        {
-            return await _context.Set<TEntity>()
+        { 
+            return await _context.Set<TEntity>() 
                 .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == Id);
         }
@@ -50,5 +50,6 @@ namespace NETCoreWebAPI_Blog_Core.Concreate
             _context.Set<TEntity>().Update(entity);
             await _context.SaveChangesAsync();
         }
+         
     }
 }

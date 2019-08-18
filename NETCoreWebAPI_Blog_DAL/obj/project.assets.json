@@ -13,6 +13,15 @@
           "lib/net45/EntityFramework.dll": {}
         }
       },
+      "LinqKit.EntityFramework/1.1.16": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LinqKit.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LinqKit.EntityFramework.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.2.6": {
         "type": "package",
         "dependencies": {
@@ -520,6 +529,18 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Data.Entity.Repository/2.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Data.Entity.Repository.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.6.1": {
         "type": "package",
         "dependencies": {
@@ -922,7 +943,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "NETCoreWebAPI_Blog_DB": "1.0.0"
+          "LinqKit.EntityFramework": "1.1.16",
+          "NETCoreWebAPI_Blog_DB": "1.0.0",
+          "System.Data.Entity.Repository": "2.0.0.1"
         },
         "compile": {
           "bin/placeholder/NETCoreWebAPI_Blog_Core.dll": {}
@@ -976,6 +999,19 @@
         "tools/init.ps1",
         "tools/install.ps1",
         "tools/migrate.exe"
+      ]
+    },
+    "LinqKit.EntityFramework/1.1.16": {
+      "sha512": "b1LTlOo6iAd6STvQvtucAT34GstmDobG0ECPiR6rcJ9qmA8HySoH+na7Jd5QCQVWd6AB9h1phs426nX37WR03A==",
+      "type": "package",
+      "path": "linqkit.entityframework/1.1.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/LinqKit.EntityFramework.dll",
+        "lib/net45/LinqKit.EntityFramework.xml",
+        "linqkit.entityframework.1.1.16.nupkg.sha512",
+        "linqkit.entityframework.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/2.2.6": {
@@ -1955,6 +1991,18 @@
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Data.Entity.Repository/2.0.0.1": {
+      "sha512": "MnYUvHPcOAUGIyOzKR4A6Kd918VkCjKpfFCQoNdjY6LO4y1QwrwWZtdmOs2B3wozTYfJgPWKpIeW3ZHn+ylgrA==",
+      "type": "package",
+      "path": "system.data.entity.repository/2.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Data.Entity.Repository.dll",
+        "system.data.entity.repository.2.0.0.1.nupkg.sha512",
+        "system.data.entity.repository.nuspec"
       ]
     },
     "System.Data.SqlClient/4.6.1": {
@@ -3610,6 +3658,26 @@
       "warningLevel": 1,
       "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LinqKit.EntityFramework 1.1.16' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "LinqKit.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.Entity.Repository 2.0.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Data.Entity.Repository",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"
       ]

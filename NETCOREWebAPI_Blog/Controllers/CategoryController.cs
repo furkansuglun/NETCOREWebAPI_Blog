@@ -12,26 +12,19 @@ namespace NETCOREWebAPI_Blog.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryRepository _repository;
+        private ICategoryRepository _repository;
 
         public CategoryController(ICategoryRepository repository)
         {
             _repository = repository;
         }
 
-        public IQueryable GetAll()
+        [HttpGet]
+        protected IQueryable GetAll()
         {
             return _repository.GetAll();
         }
 
-        [HttpPost("GetById/{id}")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(201)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
-        public Task<Category> GetById(int id)
-        {
-            return  _repository.GetById(id);
-        }
+      
     }
 }

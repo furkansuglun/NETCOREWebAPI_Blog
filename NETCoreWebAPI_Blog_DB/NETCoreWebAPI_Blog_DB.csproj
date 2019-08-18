@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Concreate\Article.cs" />
+    <Compile Remove="Concreate\Comment.cs" />
+    <Compile Remove="Concreate\Entity.cs" />
+    <Compile Remove="Concreate\Label.cs" />
+    <Compile Remove="Concreate\Member.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
   </ItemGroup>

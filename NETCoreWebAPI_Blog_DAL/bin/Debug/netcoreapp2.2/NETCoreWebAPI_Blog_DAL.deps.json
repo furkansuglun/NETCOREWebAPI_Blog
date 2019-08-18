@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "01255c22f7b3b703d33638726508b9b3a80f4f18"
+    "signature": "6f98859113153723767f7077f1605f8c3c6a6b8b"
   },
   "compilationOptions": {},
   "targets": {
@@ -23,6 +23,14 @@
           "lib/net45/EntityFramework.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.2.61023.0"
+          }
+        }
+      },
+      "LinqKit.EntityFramework/1.1.16": {
+        "runtime": {
+          "lib/net45/LinqKit.EntityFramework.dll": {
+            "assemblyVersion": "1.1.16.0",
+            "fileVersion": "1.1.16.0"
           }
         }
       },
@@ -279,6 +287,17 @@
       },
       "System.Collections.Immutable/1.5.0": {},
       "System.ComponentModel.Annotations/4.5.0": {},
+      "System.Data.Entity.Repository/2.0.0.1": {
+        "dependencies": {
+          "EntityFramework": "6.2.0"
+        },
+        "runtime": {
+          "lib/net45/System.Data.Entity.Repository.dll": {
+            "assemblyVersion": "2.0.0.1",
+            "fileVersion": "2.0.0.1"
+          }
+        }
+      },
       "System.Data.SqlClient/4.6.1": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.5.0",
@@ -514,7 +533,9 @@
       },
       "NETCoreWebAPI_Blog_Core/1.0.0": {
         "dependencies": {
-          "NETCoreWebAPI_Blog_DB": "1.0.0"
+          "LinqKit.EntityFramework": "1.1.16",
+          "NETCoreWebAPI_Blog_DB": "1.0.0",
+          "System.Data.Entity.Repository": "2.0.0.1"
         },
         "runtime": {
           "NETCoreWebAPI_Blog_Core.dll": {}
@@ -543,6 +564,13 @@
       "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
       "path": "entityframework/6.2.0",
       "hashPath": "entityframework.6.2.0.nupkg.sha512"
+    },
+    "LinqKit.EntityFramework/1.1.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b1LTlOo6iAd6STvQvtucAT34GstmDobG0ECPiR6rcJ9qmA8HySoH+na7Jd5QCQVWd6AB9h1phs426nX37WR03A==",
+      "path": "linqkit.entityframework/1.1.16",
+      "hashPath": "linqkit.entityframework.1.1.16.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "type": "package",
@@ -718,6 +746,13 @@
       "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
       "path": "system.componentmodel.annotations/4.5.0",
       "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    },
+    "System.Data.Entity.Repository/2.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MnYUvHPcOAUGIyOzKR4A6Kd918VkCjKpfFCQoNdjY6LO4y1QwrwWZtdmOs2B3wozTYfJgPWKpIeW3ZHn+ylgrA==",
+      "path": "system.data.entity.repository/2.0.0.1",
+      "hashPath": "system.data.entity.repository.2.0.0.1.nupkg.sha512"
     },
     "System.Data.SqlClient/4.6.1": {
       "type": "package",
