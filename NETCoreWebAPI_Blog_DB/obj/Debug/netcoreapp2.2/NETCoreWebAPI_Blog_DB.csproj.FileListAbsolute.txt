@@ -11,3 +11,4 @@ C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.csproj.CopyComplete
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.dll
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_DB\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.csprojAssemblyReference.cache

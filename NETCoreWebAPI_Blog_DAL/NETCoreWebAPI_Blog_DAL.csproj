@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NETCoreWebAPI_Blog_Core\NETCoreWebAPI_Blog_Core.csproj" />
+  </ItemGroup>
+
 </Project>

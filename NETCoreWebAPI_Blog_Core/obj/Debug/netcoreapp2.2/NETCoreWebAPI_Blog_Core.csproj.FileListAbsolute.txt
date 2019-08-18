@@ -6,3 +6,7 @@ C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.AssemblyInfo.cs
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.dll
 C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.dll
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\bin\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_DB.pdb
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.csprojAssemblyReference.cache
+C:\Users\Furkan\Desktop\NETCOREWebAPI_Blog\NETCOREWebAPI_Blog\NETCoreWebAPI_Blog_Core\obj\Debug\netcoreapp2.2\NETCoreWebAPI_Blog_Core.csproj.CopyComplete

@@ -11,9 +11,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NETCoreWebAPI_Blog_BAL\NETCoreWebAPI_Blog_BAL.csproj" />
+    <ProjectReference Include="..\NETCoreWebAPI_Blog_DAL\NETCoreWebAPI_Blog_DAL.csproj" />
     <ProjectReference Include="..\NETCoreWebAPI_Blog_DB\NETCoreWebAPI_Blog_DB.csproj" />
   </ItemGroup>
 
@@ -23,9 +27,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design"
-                      Version="2.0.0"
-                      PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
