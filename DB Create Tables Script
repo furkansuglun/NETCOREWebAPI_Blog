@@ -1,0 +1,118 @@
+USE [NETCoreWebAPI_Blog]
+GO
+/****** Object:  Table [dbo].[Article]    Script Date: 19.08.2019 00:24:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Article](
+	[Id] [int] NOT NULL,
+	[Title] [nvarchar](50) NULL,
+	[MemberId] [int] NULL,
+	[CategoryId] [int] NULL,
+	[Content] [nvarchar](550) NULL,
+	[PhotoPath] [nvarchar](150) NULL,
+	[Date] [datetime] NULL,
+	[ReadCount] [int] NULL,
+	[LabelId] [int] NULL,
+ CONSTRAINT [PK_Article] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Category]    Script Date: 19.08.2019 00:24:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Category](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+ CONSTRAINT [PK_Category] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Comment]    Script Date: 19.08.2019 00:24:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Comment](
+	[Id] [int] NOT NULL,
+	[Content] [nvarchar](250) NULL,
+	[MemeberId] [int] NULL,
+	[ArticleId] [int] NULL,
+	[Date] [datetime] NULL,
+ CONSTRAINT [PK_Comment] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Label]    Script Date: 19.08.2019 00:24:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Label](
+	[Id] [int] NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[ArticleId] [int] NULL,
+ CONSTRAINT [PK_Label] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Member]    Script Date: 19.08.2019 00:24:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Member](
+	[Id] [int] NOT NULL,
+	[Username] [nvarchar](50) NULL,
+	[Email] [nvarchar](100) NULL,
+	[Password] [nvarchar](50) NULL,
+	[Fullname] [nvarchar](50) NULL,
+	[PhotoPath] [nvarchar](150) NULL,
+	[IsAdmin] [bit] NULL,
+ CONSTRAINT [PK_Member] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Article]  WITH CHECK ADD  CONSTRAINT [FK_Article_Category] FOREIGN KEY([CategoryId])
+REFERENCES [dbo].[Category] ([Id])
+GO
+ALTER TABLE [dbo].[Article] CHECK CONSTRAINT [FK_Article_Category]
+GO
+ALTER TABLE [dbo].[Article]  WITH CHECK ADD  CONSTRAINT [FK_Article_Label] FOREIGN KEY([LabelId])
+REFERENCES [dbo].[Label] ([Id])
+GO
+ALTER TABLE [dbo].[Article] CHECK CONSTRAINT [FK_Article_Label]
+GO
+ALTER TABLE [dbo].[Article]  WITH CHECK ADD  CONSTRAINT [FK_Article_Member] FOREIGN KEY([MemberId])
+REFERENCES [dbo].[Member] ([Id])
+GO
+ALTER TABLE [dbo].[Article] CHECK CONSTRAINT [FK_Article_Member]
+GO
+ALTER TABLE [dbo].[Comment]  WITH CHECK ADD  CONSTRAINT [FK_Comment_Article] FOREIGN KEY([ArticleId])
+REFERENCES [dbo].[Article] ([Id])
+GO
+ALTER TABLE [dbo].[Comment] CHECK CONSTRAINT [FK_Comment_Article]
+GO
+ALTER TABLE [dbo].[Comment]  WITH CHECK ADD  CONSTRAINT [FK_Comment_Member] FOREIGN KEY([MemeberId])
+REFERENCES [dbo].[Member] ([Id])
+GO
+ALTER TABLE [dbo].[Comment] CHECK CONSTRAINT [FK_Comment_Member]
+GO
+ALTER TABLE [dbo].[Label]  WITH CHECK ADD  CONSTRAINT [FK_Label_Article] FOREIGN KEY([ArticleId])
+REFERENCES [dbo].[Article] ([Id])
+GO
+ALTER TABLE [dbo].[Label] CHECK CONSTRAINT [FK_Label_Article]
+GO
